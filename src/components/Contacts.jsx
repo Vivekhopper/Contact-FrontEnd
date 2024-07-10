@@ -43,7 +43,7 @@ function Contacts() {
     }).then((result) => {
       if (result.isConfirmed) {
         axios
-          .delete(`http://localhost:5050/contact/contact/${id}`, {
+          .delete(`https://contact-backend-ochre.vercel.app/contact/contact/${id}`, {
             headers: {
               Authorization: `Bearer ${token}`,
             },

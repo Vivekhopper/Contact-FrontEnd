@@ -23,7 +23,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5050/contact/login", data);
+      const response = await axios.post("https://contact-backend-ochre.vercel.app/contact/login", data);
       toast.success("Login Successful");
 
       // Store token in local storage

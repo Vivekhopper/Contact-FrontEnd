@@ -43,7 +43,7 @@ function Contacts() {
     }).then((result) => {
       if (result.isConfirmed) {
         axios
-          .delete(`https://contact-backend-ochre.vercel.app/contact/contact/${id}`, {
+          .delete(`https://contact-backend-9qb6.onrender.com/contact/contact/${id}`, {
             headers: {
               Authorization: `Bearer ${token}`,
             },

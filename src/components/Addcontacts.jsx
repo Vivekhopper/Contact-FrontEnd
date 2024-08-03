@@ -30,7 +30,7 @@ const AddContacts = () => {
 
     try {
       const response = await axios.post(
-        "https://contact-backend-ochre.vercel.app/contact/add-contact",
+        "https://contact-backend-9qb6.onrender.com/contact/add-contact",
         data,
         {
           headers: {

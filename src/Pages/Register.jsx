@@ -35,7 +35,7 @@ const Register = () => {
     const { confirmPassword, ...submitData } = data;
 
     axios
-      .post("https://contact-backend-ochre.vercel.app/contact/register", submitData,  {
+      .post("https://contact-backend-9qb6.onrender.com/contact/register", submitData,  {
         withCredentials: true
       })
       .then((res) => {

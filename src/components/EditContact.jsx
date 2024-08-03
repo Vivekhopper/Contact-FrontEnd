@@ -28,7 +28,7 @@ const EditContact = () => {
 
     try {
       await axios.put(
-        `https://contact-backend-ochre.vercel.app/contact/update-contact/${id}`,
+        `https://contact-backend-9qb6.onrender.com/contact/update-contact/${id}`,
         data,
         {
           headers: {
@@ -61,7 +61,7 @@ const EditContact = () => {
       const token = localStorage.getItem("token");
       try {
         const response = await axios.get(
-          `https://contact-backend-ochre.vercel.app/contact/${id}`,
+          `https://contact-backend-9qb6.onrender.com/contact/${id}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,

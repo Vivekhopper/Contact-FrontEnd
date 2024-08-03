@@ -35,7 +35,9 @@ const Register = () => {
     const { confirmPassword, ...submitData } = data;
 
     axios
-      .post("https://contact-backend-ochre.vercel.app/contact/register", submitData)
+      .post("https://contact-backend-ochre.vercel.app/contact/register", submitData,  {
+        withCredentials: true
+      })
       .then((res) => {
         toast.success("Account Created Successfully", {
           position: "top-center",

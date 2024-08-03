@@ -10,7 +10,6 @@ const EditContact = () => {
     phoneno: "",
     address: "",
   });
-
   const [loading, setLoading] = useState(true);
   const { id } = useParams(); // Extracting the contact ID from the URL parameters
   const navigate = useNavigate();
